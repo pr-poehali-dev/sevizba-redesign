@@ -116,9 +116,9 @@ export default function Index() {
 
       {/* NAV */}
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-stone-50/95 backdrop-blur-md shadow-sm border-b border-stone-200" : "bg-transparent"}`}>
-        <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
+        <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16 bg-transparent">
           <button onClick={() => scrollTo("home")} className="flex items-center gap-2">
-            <span className="font-montserrat text-xl font-bold text-stone-900 tracking-tight">Северная изба</span>
+            <span className="font-montserrat text-xl font-bold tracking-tight text-[#ffffff]">Северная изба</span>
           </button>
           <div className="hidden lg:flex items-center gap-1">
             {NAV_ITEMS.map(item => (
@@ -310,13 +310,10 @@ export default function Index() {
             </AnimSection>
             <AnimSection>
               <span className="text-stone-400 text-xs uppercase tracking-[0.25em] font-montserrat">О компании</span>
-              <h2 className="font-montserrat text-4xl font-bold text-stone-900 mt-2 mb-6">Строим с душой<br />уже 15 лет</h2>
-              <p className="text-stone-600 leading-relaxed mb-6">
-                ДревоДом — семейная компания из Вологды. Мы не просто строим — мы создаём пространства, где хочется жить. Каждый проект начинается с вашего образа: что вы чувствуете, входя домой?
-              </p>
-              <p className="text-stone-600 leading-relaxed mb-10">
-                Работаем только с сертифицированными материалами, используем дерево северных пород — оно плотнее, долговечнее и теплее. Все наши мастера прошли обучение в Финляндии.
-              </p>
+              <h2 className="font-montserrat text-4xl font-bold text-stone-900 mt-2 mb-6">Строим с душой
+более 20-ти лет</h2>
+              <p className="text-stone-600 leading-relaxed mb-6">Северная изба — это уникальное сочетание традиций русского зодчества и современных технологий строительства домов из дерева. Мы не просто строим — мы создаём пространства, где хочется жить. Каждый проект начинается с вашего образа:  а что Вы чувствуете, входя домой?</p>
+              <p className="text-stone-600 leading-relaxed mb-10">Работаем только с сертифицированными материалами, используем премиальное дерево Северных пород — оно плотнее, долговечнее и теплее. Команда профессионалов с опытом</p>
               <div className="grid grid-cols-3 gap-6 pt-8 border-t border-stone-200">
                 {[{ val: "340+", label: "проектов" }, { val: "98%", label: "рекомендуют" }, { val: "47", label: "мастеров" }].map(s => (
                   <div key={s.label}>

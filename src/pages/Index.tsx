@@ -160,13 +160,11 @@ export default function Index() {
         <div className="relative z-10 max-w-7xl mx-auto px-6 pb-20 pt-40 w-full">
           <div className="max-w-2xl">
             <span className="inline-block text-white/60 font-montserrat text-xs tracking-[0.3em] uppercase mb-5">Строительство под ключ</span>
-            <h1 className="font-montserrat text-5xl md:text-6xl font-bold text-white leading-[1.1] mb-6">
+            <h1 className="font-montserrat text-5xl md:text-6xl text-white leading-[1.1] mb-6 font-semibold">
               Деревянные дома<br />
               и бани вашей мечты
             </h1>
-            <p className="text-white/70 text-base font-montserrat font-normal mb-10 max-w-lg leading-relaxed">
-              Строим из отборного дерева с 2008 года. Клееный брус, рубленое бревно, авторские проекты. Гарантия 10 лет.
-            </p>
+            <p className="text-white/70 text-base font-montserrat font-normal mb-10 max-w-lg leading-relaxed">Строим из благородной Северной древесины. Рубленое бревно, клееный брус, индивидуальные проекты. Гарантия 10 лет.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button onClick={() => scrollTo("projects")} className="bg-wood-600 hover:bg-wood-700 text-white px-8 py-4 font-medium text-sm tracking-wide transition-colors rounded-sm">
                 Смотреть проекты

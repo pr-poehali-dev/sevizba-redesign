@@ -118,7 +118,7 @@ export default function Index() {
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-stone-50/95 backdrop-blur-md shadow-sm border-b border-stone-200" : "bg-transparent"}`}>
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
           <button onClick={() => scrollTo("home")} className="flex items-center gap-2">
-            <span className="font-cormorant text-2xl font-semibold text-wood-800 tracking-wide">ДревоДом</span>
+            <span className="font-montserrat text-xl font-bold text-stone-900 tracking-tight">ДревоДом</span>
           </button>
           <div className="hidden lg:flex items-center gap-1">
             {NAV_ITEMS.map(item => (
@@ -159,12 +159,12 @@ export default function Index() {
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-6 pb-20 pt-40 w-full">
           <div className="max-w-2xl">
-            <span className="inline-block text-wood-300 font-golos text-sm tracking-[0.2em] uppercase mb-4">Строительство под ключ</span>
-            <h1 className="font-cormorant text-5xl md:text-7xl font-light text-white leading-[1.05] mb-6">
+            <span className="inline-block text-white/60 font-montserrat text-xs tracking-[0.3em] uppercase mb-5">Строительство под ключ</span>
+            <h1 className="font-montserrat text-5xl md:text-6xl font-bold text-white leading-[1.1] mb-6">
               Деревянные дома<br />
-              <em className="font-light not-italic text-wood-200">и бани</em> вашей мечты
+              и бани вашей мечты
             </h1>
-            <p className="text-stone-300 text-lg font-golos font-light mb-10 max-w-lg leading-relaxed">
+            <p className="text-white/70 text-base font-montserrat font-normal mb-10 max-w-lg leading-relaxed">
               Строим из отборного дерева с 2008 года. Клееный брус, рубленое бревно, авторские проекты. Гарантия 10 лет.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -180,8 +180,8 @@ export default function Index() {
         <div className="absolute bottom-10 right-10 hidden md:flex flex-col gap-6 z-10">
           {[{ val: "15+", label: "лет опыта" }, { val: "340+", label: "объектов" }, { val: "10", label: "лет гарантии" }].map(s => (
             <div key={s.label} className="text-right">
-              <div className="font-cormorant text-3xl font-light text-white">{s.val}</div>
-              <div className="text-stone-400 text-xs font-golos uppercase tracking-widest">{s.label}</div>
+              <div className="font-montserrat text-3xl font-bold text-white">{s.val}</div>
+              <div className="text-white/50 text-xs font-montserrat uppercase tracking-widest mt-0.5">{s.label}</div>
             </div>
           ))}
         </div>
@@ -193,8 +193,8 @@ export default function Index() {
           <AnimSection>
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
               <div>
-                <span className="text-forest-600 text-sm uppercase tracking-[0.2em] font-golos">Наши работы</span>
-                <h2 className="font-cormorant text-5xl font-light text-stone-800 mt-2">Галерея проектов</h2>
+                <span className="text-stone-400 text-xs uppercase tracking-[0.25em] font-montserrat">Наши работы</span>
+                <h2 className="font-montserrat text-4xl font-bold text-stone-900 mt-2">Галерея проектов</h2>
               </div>
               <div className="flex gap-2 flex-wrap">
                 {[
@@ -236,7 +236,7 @@ export default function Index() {
                     </div>
                   </div>
                   <div className="p-5">
-                    <h3 className="font-cormorant text-2xl font-medium text-stone-800 mb-1">{project.title}</h3>
+                    <h3 className="font-montserrat text-lg font-semibold text-stone-900 mb-1">{project.title}</h3>
                     <div className="flex gap-4 text-sm text-stone-500">
                       <span className="flex items-center gap-1"><Icon name="Maximize2" size={13} /> {project.area}</span>
                       <span className="flex items-center gap-1"><Icon name="Layers" size={13} /> {project.material}</span>
@@ -260,8 +260,8 @@ export default function Index() {
               </button>
             </div>
             <div className="p-8">
-              <span className="text-forest-600 text-xs uppercase tracking-widest">{activeProject.type}</span>
-              <h3 className="font-cormorant text-3xl font-medium text-stone-800 mt-1">{activeProject.title}</h3>
+              <span className="text-stone-400 text-xs uppercase tracking-widest font-montserrat">{activeProject.type}</span>
+              <h3 className="font-montserrat text-2xl font-bold text-stone-900 mt-1">{activeProject.title}</h3>
               <div className="grid grid-cols-2 gap-4 mt-6 pt-6 border-t border-stone-100">
                 <div><span className="text-xs text-stone-400 uppercase tracking-widest">Площадь</span><p className="font-medium text-stone-800 mt-1">{activeProject.area}</p></div>
                 <div><span className="text-xs text-stone-400 uppercase tracking-widest">Материал</span><p className="font-medium text-stone-800 mt-1">{activeProject.material}</p></div>
@@ -278,18 +278,18 @@ export default function Index() {
       <section id="services" className="py-24 bg-wood-800">
         <div className="max-w-7xl mx-auto px-6">
           <AnimSection>
-            <span className="text-wood-300 text-sm uppercase tracking-[0.2em] font-golos">Что мы делаем</span>
-            <h2 className="font-cormorant text-5xl font-light text-stone-100 mt-2 mb-14">Наши услуги</h2>
+            <span className="text-white/50 text-xs uppercase tracking-[0.25em] font-montserrat">Что мы делаем</span>
+            <h2 className="font-montserrat text-4xl font-bold text-white mt-2 mb-14">Наши услуги</h2>
           </AnimSection>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-wood-700">
             {SERVICES.map((s, i) => (
               <AnimSection key={i}>
                 <div className="bg-wood-800 p-8 hover:bg-wood-700/50 transition-colors group">
                   <div className="w-10 h-10 rounded-full border border-wood-500 flex items-center justify-center mb-6 group-hover:border-wood-300 transition-colors">
-                    <Icon name={s.icon} size={18} className="text-wood-300" fallback="Circle" />
+                    <Icon name={s.icon} size={18} className="text-white/70" fallback="Circle" />
                   </div>
-                  <h3 className="font-cormorant text-2xl font-medium text-stone-100 mb-3">{s.title}</h3>
-                  <p className="text-stone-400 text-sm leading-relaxed">{s.desc}</p>
+                  <h3 className="font-montserrat text-lg font-semibold text-white mb-3">{s.title}</h3>
+                  <p className="text-white/50 text-sm leading-relaxed">{s.desc}</p>
                 </div>
               </AnimSection>
             ))}
@@ -304,15 +304,15 @@ export default function Index() {
             <AnimSection>
               <div className="relative">
                 <img src={INTERIOR_IMG} alt="О компании" className="w-full rounded-sm object-cover aspect-[4/3]" />
-                <div className="absolute -bottom-6 -right-6 bg-wood-700 text-stone-50 p-6 rounded-sm hidden md:block">
-                  <div className="font-cormorant text-4xl font-light">2008</div>
-                  <div className="text-wood-200 text-xs uppercase tracking-widest mt-1">год основания</div>
+                <div className="absolute -bottom-6 -right-6 bg-wood-700 text-white p-6 rounded-sm hidden md:block">
+                  <div className="font-montserrat text-4xl font-bold text-white">2008</div>
+                  <div className="text-white/60 text-xs uppercase tracking-widest mt-1">год основания</div>
                 </div>
               </div>
             </AnimSection>
             <AnimSection>
-              <span className="text-forest-600 text-sm uppercase tracking-[0.2em] font-golos">О компании</span>
-              <h2 className="font-cormorant text-5xl font-light text-stone-800 mt-2 mb-6">Строим с душой<br /><em className="not-italic text-wood-600">уже 15 лет</em></h2>
+              <span className="text-stone-400 text-xs uppercase tracking-[0.25em] font-montserrat">О компании</span>
+              <h2 className="font-montserrat text-4xl font-bold text-stone-900 mt-2 mb-6">Строим с душой<br />уже 15 лет</h2>
               <p className="text-stone-600 leading-relaxed mb-6">
                 ДревоДом — семейная компания из Вологды. Мы не просто строим — мы создаём пространства, где хочется жить. Каждый проект начинается с вашего образа: что вы чувствуете, входя домой?
               </p>
@@ -322,8 +322,8 @@ export default function Index() {
               <div className="grid grid-cols-3 gap-6 pt-8 border-t border-stone-200">
                 {[{ val: "340+", label: "проектов" }, { val: "98%", label: "рекомендуют" }, { val: "47", label: "мастеров" }].map(s => (
                   <div key={s.label}>
-                    <div className="font-cormorant text-4xl font-light text-wood-700">{s.val}</div>
-                    <div className="text-stone-500 text-xs uppercase tracking-widest mt-1">{s.label}</div>
+                    <div className="font-montserrat text-4xl font-bold text-stone-900">{s.val}</div>
+                    <div className="text-stone-400 text-xs uppercase tracking-widest mt-1">{s.label}</div>
                   </div>
                 ))}
               </div>
@@ -336,8 +336,8 @@ export default function Index() {
       <section id="process" className="py-24 bg-stone-50">
         <div className="max-w-7xl mx-auto px-6">
           <AnimSection>
-            <span className="text-forest-600 text-sm uppercase tracking-[0.2em] font-golos">Как мы работаем</span>
-            <h2 className="font-cormorant text-5xl font-light text-stone-800 mt-2 mb-14">Процесс строительства</h2>
+            <span className="text-stone-400 text-xs uppercase tracking-[0.25em] font-montserrat">Как мы работаем</span>
+            <h2 className="font-montserrat text-4xl font-bold text-stone-900 mt-2 mb-14">Процесс строительства</h2>
           </AnimSection>
           <div className="relative">
             <div className="hidden lg:block absolute left-8 right-8 h-px bg-stone-200 z-0" style={{ top: "2rem" }} />
@@ -346,9 +346,9 @@ export default function Index() {
                 <AnimSection key={i}>
                   <div className="flex flex-col">
                     <div className="w-16 h-16 rounded-full bg-stone-50 border-2 border-stone-200 flex items-center justify-center mb-6">
-                      <span className="font-cormorant text-2xl font-light text-wood-700">{step.num}</span>
+                      <span className="font-montserrat text-lg font-bold text-stone-700">{step.num}</span>
                     </div>
-                    <h3 className="font-cormorant text-2xl font-medium text-stone-800 mb-2">{step.title}</h3>
+                    <h3 className="font-montserrat text-base font-semibold text-stone-900 mb-2">{step.title}</h3>
                     <p className="text-stone-500 text-sm leading-relaxed">{step.desc}</p>
                   </div>
                 </AnimSection>
@@ -362,20 +362,20 @@ export default function Index() {
       <section id="prices" className="py-24 bg-stone-100">
         <div className="max-w-7xl mx-auto px-6">
           <AnimSection>
-            <span className="text-forest-600 text-sm uppercase tracking-[0.2em] font-golos">Стоимость</span>
-            <h2 className="font-cormorant text-5xl font-light text-stone-800 mt-2 mb-4">Цены на строительство</h2>
+            <span className="text-stone-400 text-xs uppercase tracking-[0.25em] font-montserrat">Стоимость</span>
+            <h2 className="font-montserrat text-4xl font-bold text-stone-900 mt-2 mb-4">Цены на строительство</h2>
             <p className="text-stone-500 mb-14 max-w-xl">Каждый проект рассчитывается индивидуально. Цены ориентировочные — финальная стоимость после встречи и осмотра участка.</p>
           </AnimSection>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {PRICES.map((p, i) => (
               <AnimSection key={i}>
                 <div className={`rounded-sm p-8 h-full flex flex-col ${p.accent ? "bg-wood-700 text-stone-50" : "bg-white"}`}>
-                  <div className={`text-sm uppercase tracking-[0.2em] font-golos mb-2 ${p.accent ? "text-wood-200" : "text-stone-400"}`}>{p.name}</div>
-                  <div className={`font-cormorant text-4xl font-light mb-8 ${p.accent ? "text-white" : "text-stone-800"}`}>{p.price}</div>
+                  <div className={`text-xs uppercase tracking-[0.25em] font-montserrat mb-2 ${p.accent ? "text-white/60" : "text-stone-400"}`}>{p.name}</div>
+                  <div className={`font-montserrat text-3xl font-bold mb-8 ${p.accent ? "text-white" : "text-stone-900"}`}>{p.price}</div>
                   <ul className="space-y-3 flex-1">
                     {p.features.map((f, fi) => (
-                      <li key={fi} className={`flex items-start gap-3 text-sm ${p.accent ? "text-wood-100" : "text-stone-600"}`}>
-                        <Icon name="Check" size={14} className={`mt-0.5 flex-shrink-0 ${p.accent ? "text-wood-300" : "text-forest-500"}`} />
+                      <li key={fi} className={`flex items-start gap-3 text-sm ${p.accent ? "text-white/80" : "text-stone-600"}`}>
+                        <Icon name="Check" size={14} className={`mt-0.5 flex-shrink-0 ${p.accent ? "text-white/60" : "text-stone-400"}`} />
                         {f}
                       </li>
                     ))}
@@ -399,8 +399,8 @@ export default function Index() {
           <AnimSection>
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
               <div>
-                <span className="text-forest-600 text-sm uppercase tracking-[0.2em] font-golos">Полезное</span>
-                <h2 className="font-cormorant text-5xl font-light text-stone-800 mt-2">Статьи и советы</h2>
+                <span className="text-stone-400 text-xs uppercase tracking-[0.25em] font-montserrat">Полезное</span>
+                <h2 className="font-montserrat text-4xl font-bold text-stone-900 mt-2">Статьи и советы</h2>
               </div>
               <button className="text-wood-700 text-sm font-medium hover:text-wood-900 transition-colors flex items-center gap-2">
                 Все статьи <Icon name="ArrowRight" size={14} />
@@ -418,7 +418,7 @@ export default function Index() {
                     <span className="text-xs bg-stone-100 text-stone-500 px-3 py-1 rounded-sm">{a.tag}</span>
                     <span className="text-xs text-stone-400">{a.date}</span>
                   </div>
-                  <h3 className="font-cormorant text-2xl font-medium text-stone-800 leading-tight group-hover:text-wood-700 transition-colors">{a.title}</h3>
+                  <h3 className="font-montserrat text-base font-semibold text-stone-900 leading-snug group-hover:text-stone-600 transition-colors">{a.title}</h3>
                 </article>
               </AnimSection>
             ))}
@@ -431,8 +431,8 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             <AnimSection>
-              <span className="text-wood-300 text-sm uppercase tracking-[0.2em] font-golos">Свяжитесь с нами</span>
-              <h2 className="font-cormorant text-5xl font-light text-stone-100 mt-2 mb-6">Обсудим ваш<br />проект</h2>
+              <span className="text-white/50 text-xs uppercase tracking-[0.25em] font-montserrat">Свяжитесь с нами</span>
+              <h2 className="font-montserrat text-4xl font-bold text-white mt-2 mb-6">Обсудим ваш<br />проект</h2>
               <p className="text-stone-400 mb-12 leading-relaxed">Расскажите о своей мечте — мы предложим решение и бесплатно выедем на участок.</p>
               <div className="space-y-6">
                 {[
@@ -442,7 +442,7 @@ export default function Index() {
                 ].map(c => (
                   <div key={c.val} className="flex items-start gap-4">
                     <div className="w-10 h-10 rounded-full border border-wood-600 flex items-center justify-center flex-shrink-0">
-                      <Icon name={c.icon} size={16} className="text-wood-300" fallback="Circle" />
+                      <Icon name={c.icon} size={16} className="text-white/70" fallback="Circle" />
                     </div>
                     <div>
                       <div className="text-stone-100 font-medium">{c.val}</div>

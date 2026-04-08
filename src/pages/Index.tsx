@@ -303,7 +303,7 @@ export default function Index() {
               <div className="relative">
                 <img src={INTERIOR_IMG} alt="О компании" className="w-full rounded-sm object-cover aspect-[4/3]" />
                 <div className="absolute -bottom-6 -right-6 bg-wood-700 text-white p-6 rounded-sm hidden md:block">
-                  <div className="font-montserrat text-4xl font-bold text-white">2008</div>
+                  <div className="font-montserrat text-4xl font-bold text-white">2004</div>
                   <div className="text-white/60 text-xs uppercase tracking-widest mt-1">год основания</div>
                 </div>
               </div>
@@ -484,8 +484,8 @@ export default function Index() {
       {/* FOOTER */}
       <footer className="bg-stone-950 py-10">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <span className="font-cormorant text-2xl font-semibold text-stone-300">ДревоДом</span>
-          <p className="text-stone-600 text-sm">© 2026 ДревоДом. Строительство деревянных домов и бань</p>
+          <span className="font-cormorant text-2xl font-semibold text-stone-300">Северная изба</span>
+          <p className="text-stone-600 text-sm">© 2026 Северная изба. Строительство деревянных домов и бань</p>
           <div className="flex gap-6">
             {["Главная", "Проекты", "Контакты"].map(l => (
               <button key={l} className="text-stone-500 hover:text-stone-300 text-sm transition-colors">{l}</button>

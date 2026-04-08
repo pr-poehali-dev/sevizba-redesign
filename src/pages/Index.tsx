@@ -155,7 +155,7 @@ export default function Index() {
       <section id="home" className="relative min-h-screen flex items-end">
         <div className="absolute inset-0">
           <img src={HERO_IMG} alt="Деревянный дом" className="w-full h-full object-cover" />
-          <div className="absolute inset-1 from-black-950/80 via-stone-900/10 to-transparent bg-[#000000] rounded-0" />
+          <div className="absolute inset-1 from-black-950/80 via-stone-900/10 to-transparent bg-[#00000059] rounded-0 mx-0" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-6 pb-20 pt-40 w-full">
           <div className="max-w-2xl">

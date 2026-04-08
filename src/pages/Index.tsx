@@ -118,7 +118,7 @@ export default function Index() {
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-stone-50/95 backdrop-blur-md shadow-sm border-b border-stone-200" : "bg-transparent"}`}>
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
           <button onClick={() => scrollTo("home")} className="flex items-center gap-2">
-            <span className="font-montserrat text-xl font-bold text-stone-900 tracking-tight">ДревоДом</span>
+            <span className="font-montserrat text-xl font-bold text-stone-900 tracking-tight">Северная изба</span>
           </button>
           <div className="hidden lg:flex items-center gap-1">
             {NAV_ITEMS.map(item => (
@@ -155,7 +155,7 @@ export default function Index() {
       <section id="home" className="relative min-h-screen flex items-end">
         <div className="absolute inset-0">
           <img src={HERO_IMG} alt="Деревянный дом" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-stone-900/30 to-transparent" />
+          <div className="absolute inset-1 from-stone-950/80 via-stone-900/30 to-transparent bg-transparent" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-6 pb-20 pt-40 w-full">
           <div className="max-w-2xl">
